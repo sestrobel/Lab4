@@ -1,8 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<BorderPane maxHeight="500.0" maxWidth="800.0" prefHeight="500.0" prefWidth="800.0" stylesheets="@PokerTable.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox alignment="CENTER" maxHeight="200.0" maxWidth="250.0" minHeight="200.0" minWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" text="Player 1" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <ButtonBar maxWidth="200.0">
+              <buttons>
+                  <Button layoutX="130.0" layoutY="160.0" mnemonicParsing="false" text="Sit" />
+                  <Button mnemonicParsing="false" text="Leave" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" maxHeight="200.0" maxWidth="250.0" minHeight="200.0" minWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Player 2" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <ButtonBar maxWidth="200.0">
+               <buttons>
+                  <Button mnemonicParsing="false" text="Sit" />
+                  <Button mnemonicParsing="false" text="Leave" />
+               </buttons>
+            </ButtonBar>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <top>
+      <VBox alignment="CENTER" maxHeight="150.0" maxWidth="800.0" minHeight="150.0" minWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                        <Menu mnemonicParsing="false" text="New Game">
+                          <items>
+                              <MenuItem mnemonicParsing="false" text="5 Card Joker Poker" />
+                              <MenuItem mnemonicParsing="false" text="5 Card Wild Poker (Deuces Wild)" />
+                              <MenuItem mnemonicParsing="false" text="5 Card Draw" />
+                              <MenuItem mnemonicParsing="false" text="7 Card Draw" />
+                              <MenuItem mnemonicParsing="false" text="Texas Hold 'Em" />
+                              <MenuItem mnemonicParsing="false" text="Omaha" />
+                          </items>
+                        </Menu>
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Label text="Player 3" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <ButtonBar maxWidth="200.0" prefHeight="64.0" prefWidth="1000.0">
+              <buttons>
+                <Button minWidth="0.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="74.0" text="Sit" />
+                  <Button mnemonicParsing="false" text="Leave" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" maxHeight="200.0" maxWidth="300.0" minHeight="200.0" minWidth="300.0" BorderPane.alignment="BOTTOM_RIGHT">
+         <children>
+            <Label text="RIO POKER" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <ButtonBar maxWidth="100.0">
+              <buttons>
+                  <Button maxWidth="50.0" minWidth="50.0" mnemonicParsing="false" text="Deal" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <VBox alignment="CENTER" maxHeight="150.0" maxWidth="800.0" minHeight="150.0" minWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Player 4" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <ButtonBar maxWidth="200.0">
+              <buttons>
+                <Button mnemonicParsing="false" text="Sit" />
+                  <Button mnemonicParsing="false" text="Leave" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </bottom>
 </BorderPane>
-
